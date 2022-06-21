@@ -1,0 +1,58 @@
+
+<!--    NAME: MENDIOLA, DEN ELYSON S.               SUBJECT: WEB SYSTEMS AND TECHNOLOGIES               SECTION: BT - 601
+
+        HTML FILE FOR CALCULATOR
+
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title> Simple Calculator </Title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+        <link rel = "stylesheet" href = "Calculator-style.css">
+    </head>
+    <body>
+        <table class = "Caculator-Layout">
+            <form class action = "#">
+                <th colspan = "4">
+                    Calculator 
+                </th>
+                <tr>
+                    <td colspan = "4"><input class = "result-text" type = "text"  id = "display-result" 
+                        placeholder = "0" disabled> </td>
+                </tr>
+                <tr>
+                    <td colspan = "2"><input class = "CButton" type = "button" value = "C" onclick = "resetText()"/> </td>
+                    <td><input class = "OpButton" type = "button" value = "%" onclick = "displayValue('%')"/> </td>
+                    <td><input class = "OpButton" type = "button" value = "/" onclick = "displayValue('/')"/> </td>
+                </tr>
+                <tr>
+                    <td><input class = "NumButton" type = "button" value = "7" onclick = "displayValue('7')"/> </td>
+                    <td><input class = "NumButton" type = "button" value = "8" onclick = "displayValue('8')"/> </td>
+                    <td><input class = "NumButton" type = "button" value = "9" onclick = "displayValue('9')"/> </td>
+                    <td><input class = "OpButton" type = "button" value = "x" onclick = "displayValue('*')"/> </td>
+                </tr>
+                <tr>
+                    <td><input class = "NumButton" type = "button" value = "4" onclick = "displayValue('4')"/> </td>
+                    <td><input class = "NumButton" type = "button" value = "5" onclick = "displayValue('5')"/> </td>
+                    <td><input class = "NumButton" type = "button" value = "6" onclick = "displayValue('6')"/> </td>
+                    <td><input class = "OpButton" type = "button" value = "-" onclick = "displayValue('-')"/> </td>
+                </tr>
+                <tr>
+                    <td><input class = "NumButton" type = "button" value = "1" onclick = "displayValue('1')"/> </td>
+                    <td><input class = "NumButton" type = "button" value = "2" onclick = "displayValue('2')"/> </td>
+                    <td><input class = "NumButton" type = "button" value = "3" onclick = "displayValue('3')"/> </td>
+                    <td><input class = "OpButton" type = "button" value = "+" onclick = "displayValue('+')"/> </td>
+                </tr>
+                <tr>
+                    <td><input class = "NumButton" type = "button" value = "00" onclick = "displayValue('00')"/> </td>
+                    <td><input class = "NumButton" type = "button" value = "0" onclick = "displayValue('0')"/> </td>
+                    <td><input class = "OpButton" type = "button" value = "." onclick = "displayValue('.')"/> </td>
+                    <td><input class = "OpButton" type = "button" value = "=" onclick = "calculateNum()"/> </td>
+                </tr>
+            </form>
+        </table>
+        <script type = "text/javascript" src = "Calculator-js.js"></script>
+    </body>
+</html>
