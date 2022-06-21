@@ -16,7 +16,7 @@ function calculateNum()
     // Initializing displayNum variable with the values displayed on the display box
     var display = document.getElementById("display-result").value;
 
-    if (display.includes('%')) // If the display box contains percentage sign
+    if (display.includes('-')) // If the display box contains percentage sign
     {
         // This replaces the percent sign with multiplying the number on the display with 100 percent (* 0.01)
         var display = display.replace(/%/g, '*0.01'); 
@@ -36,4 +36,5 @@ function calculateNum()
 function resetText() // This function removes that text on the display box when the user clicked 'C'.
 {   
     document.getElementById("display-result").value = "";
+
 }
