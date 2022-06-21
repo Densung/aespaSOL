@@ -8,7 +8,7 @@
 function displayValue(value) 
 {
     // This statements appends values to the display box as the user clicked number and operator buttons
-    document.getElementById("siwawaa").value += value;
+    document.getElementById("siwawa").value += value;
 }
 
 function calculateNum() 
