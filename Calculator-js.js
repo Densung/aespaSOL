@@ -8,7 +8,7 @@
 function displayValue(value) 
 {
     // This statements appends values to the display box as the user clicked number and operator buttons
-    document.getElementById("tanginamerzozozo").value += value;
+    document.getElementById("RATATATATTA").value += value;
 
 }
 
