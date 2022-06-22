@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang = "en">
 <style>
+
 html
 {
     background-color: black;
     background-image: url('Black-Mamba-BG.PNG'); 
-    background-repeat: no-repeat; background-size: cover; 
-    background-size: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    font-family: 'Open Sans';
 }
 [class*=”column-”]
 {
@@ -43,6 +48,12 @@ html
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
+
+.Updates img:hover, .smcu2-text:hover
+{
+  opacity: 0.7;
+}
+
 </style>
     <head>
         <Title> Home </Title>
@@ -67,6 +78,40 @@ html
                     </strong>
                 </div>
             </div>
+            <div class = "column-9">
+                <div class = "column-9 Updates">
+                    <h1><p style = "color: white; font-size: 50px; margin: 0;">Updates</p></h1>
+                    <p id = "smcu-updates1" style = "color: white; font-size: 30px; margin: 0;"></p>
+                    <a href = "https://www.youtube.com/watch?v=yH9v20RCz_w" style = "color:white;">
+                        <p class = "smcu2-text" style = "margin: auto; font-size: 20px;">aespa 에스파 ‘ep2. Next Level’ – SM Culture Universe Behind The Scenes</p>
+                        <img class = "smcu2" src = "Update4.jpg" alt="SMCU2" style="width: 100%"> 
+                    </a><br><br><br><br>
+                    <p id = "smcu-updates2" style = "color: white; font-size: 30px; margin: 0;"></p>
+                    <a href = "Update3.jpg"><img src = "Update3.jpg" alt = "ig1" style = "width: 100%"></a>
+                    <br><br><br><br>
+                    <p id = "smcu-updates3" style = "color: white; font-size: 30px; margin: 0;"></p>
+                    <a href = "https://www.youtube.com/watch?v=i8fRCkq5tbw&t=3s" style = "color:white;">
+                        <p class = "smcu2-text" style = "margin: auto; font-size: 20px;">aespa 에스파 ‘ep2. Next Level’ – SM Culture Universes</p>
+                        <img class = "smcu2" src = "SMCU-ep2.jpg" alt="SMCU2" style="width: 100%"> 
+                    </a> <br><br><br><br>
+                    <div id = ig-updates-img>
+                        <p id = "ig-updates" style = "color: white; font-size: 40px; margin: 0;"></p>
+                        <br><br>
+                        <p id = "igu1" style = "color: white; font-size: 20px; margin: 0;"></p>
+                        <th></th>
+                        <tr><a href = "Ig5.jpg"><img src = "ig5.jpg" alt = "ig1" style = "width: 350px;"></a>
+                            <a href = "ig6.jpg"><img src = "ig6.jpg" alt = "ig2" style = "width: 350px;"></a></tr>
+                            <br><br><br><br>
+                        <p id = "igu2" style = "color: white; font-size: 20px; margin: 0;"></p>
+                        <th></th>
+                        <tr><a href = "ig1.jpg"><img src = "ig1.jpg" alt = "ig1" style = "width: 350px;"></a>
+                            <a href = "ig2.jpg"><img src = "ig2.jpg" alt = "ig2" style = "width: 350px;"></a></tr>
+                        <tr><a href = "ig3.jpg"></a><img src = "ig3.jpg" alt = "ig3" style = "width: 350px;"></a>
+                            <a href = "ig4.jpg"><img src = "ig4.jpg" alt = "ig4" style = "height: 350px;"></a></tr> 
+                    </div>
+                </div>
+            </div>
         </div>
+        <script type = "text/javascript" src = "Home-js.js"></script>
     </body>
 </html>
