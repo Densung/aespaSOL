@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html style = "background-color: black; background-image: url('Black-Mamba-BG.JPG'); 
-               background-repeat: no-repeat; background-size: cover; 
-               background-size: fixed;">
+<html lang = "en">
 <style>
-    @media only screen and (min-width: 768px)
-    {
-    .column-1 {width: 8.33%;}
+body
+{
+    background-image: url('Black-Mamba-BG.JPG'); 
+    background-repeat: no-repeat; background-size: cover; 
+    background-size: fixed;
+}
+[class*=”column-”]
+{
+    float: left;
+    padding: 2px;
+    width: 100%;
+}
+@media only screen and (min-width: 768px)
+{
+    .column-1 {width: 8.33%; float: left;}
     .column-2 {width: 16.66%;}
     .column-3 {width: 25%;}
     .column-4 {width: 33.33%;}
@@ -17,14 +27,29 @@
     .column-10 {width: 83.33%;}
     .column-11 {width: 91.66%;}
     .column-12 {width: 100%;}
-    }
+}
+.btn-Modules
+{
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
 </style>
     <head>
         <Title> Home </Title>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
-        <img src = "aespaSOL-logo.png" alt = "aespasol logo">
+        <meta charset = "utf-8">
     </head>
     <body>
-
+        <div class = "row">
+            <div class = "column-1 Modules" style = "text-align: center;">
+                <img src = "aespaSOL-logo.png" alt = "aespasol logo" style = "width: 350px; height: auto; padding: 0%;">
+                <div class = "btn-Modules">
+                    <button class = "Home" onclick = "displayValue('7')">Home</button>
+                    <input class = "Members" type = "button" value = "Members" onclick = "displayValue('7')"/>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
