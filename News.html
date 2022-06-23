@@ -9,8 +9,10 @@ html
 {
     background-color: black;
     background-image: url('Black-Mamba-BG.PNG'); 
-    background-repeat: no-repeat; background-size: cover; 
-    background-size: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
     color: white;
     font-family: 'Open Sans';
 }
@@ -29,13 +31,18 @@ html
     .column-5 {width: 41.66%;}
     .column-6 {width: 50%;}
     .column-7 {width: 58.33%;}
-    .column-8 {width: 66.66%;}
+    .column-8 {width: 66.66%; float: left;}
     .column-9 {width: 75%;}
     .column-10 {width: 83.33%;}
     .column-11 {width: 91.66%;}
     .column-12 {width: 100%;}
 }
-
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
 .button
 {
     font-size: 25px;
@@ -48,6 +55,14 @@ html
 {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+}
+.button
+{
+    font-size: 25px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: white;
 }
 </style>
     <head>
@@ -73,9 +88,44 @@ html
                     </strong>
                 </div>
                 <div class = "column-9">
-                    <h1><p style = "font-size: 50px; margin: 0;">News</p></h1> <hr>
+                    <div class = "column-9">
+                        <h1><p style = "font-size: 50px; margin: 0;">News</p></h1><hr>
+                    </div>
+                </div>
+            </div>
+            <div class = "column-12">
+                <div class = "column-1" style = "margin-left: 3cm">
+                    <h1><p></p></h1>
+                </div>
+                <div class = "column-8 News">
+                    <h1><p style = "font-size: 15px; margin: 0;">
+                        SM Entertainment Denies That Demo Of aespa’s Upcoming Song Was Leaked</p></h1><br>
+                        <img src = "News/news1.PNG" alt = "news1" style = "width: 80%; display: block; margin: auto;">
+                        <br>
+                        <p style = "font-size: 20px;"><span style = "font-size: 10px;">June 24, 2022</span><br> 
+                            June 14, SM Entertainment denied rumors regarding aespa’s upcoming release.<br><br>
+
+                            Recently, an audio clip spread on online communities with the claim that it is an English demo of aespa’s 
+                            new song “Girls.” The posts also added that producer Yoo Young Jin participated in making 
+                            the song. <span id = dots>...</span> <span id = "more"><br><br>
+                            
+                            In response to this, a representative of SM Entertainment commented, “The relevant demo is 
+                            not aespa’s new song.” <br><br>
+                            
+                            aespa made their debut in November 2020 with “Black Mamba,” and they followed up with the hit tracks 
+                            “Next Level” and “Savage.” Earlier this month, aespa confirmed their comeback with their second mini 
+                            album “Girls.” The album already surpassed 1 million stock pre-orders,
+                            setting a new personal best for the girl group.<br><br>
+                            
+                            Before aespa’s second mini album “Girls” drops on July 8, the group will be pre-releasing their 
+                            English-language single “Life’s Too Short” on June 24.</span> 
+                            <button class = "button" onclick="readMore()" id = "readButton">See more</button></p>
+                </div>
+                <div class = "column-1" style = "margin-right: 3cm">
+                    <h1><p></p></h1>
                 </div>
             </div>
         </div>
+        <script type = "text/javascript" src = "News-js.js"></script>
     </body>
 </html>
