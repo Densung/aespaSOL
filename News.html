@@ -14,7 +14,7 @@ html
     background-attachment: fixed;
     background-position: center;
     color: white;
-    font-family: 'Open Sans';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 [class*=”column-”]
 {
@@ -56,18 +56,36 @@ html
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
-.button
+.more
 {
-    font-size: 25px;
-    margin: 10px;
+    display: none;
+}
+.sources
+{
+    color: white;
+}
+.sources:hover
+{
+    color: blueviolet;
+}
+.sources-img:hover
+{
+    opacity: 0.7;
+}
+.read-button
+{
+    font-size: 20px;
+    margin: 10;
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     color: white;
 }
-#more
+.read-button:hover
 {
-    display: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
 }
+
 </style>
     <head>
         <Title> News </Title>
@@ -103,52 +121,209 @@ html
                 </div>
                 <div class = "column-8 News">
                     <h1><p style = "font-size: 30px; margin: 0;">
-                        SM Entertainment Denies That Demo Of aespa’s Upcoming Song Was Leaked</p></h1><br>
-                        <img src = "News/news1.PNG" alt = "news1" style = "width: 80%; display: block; margin: auto;">
-                        <br>
-                        <p style = "font-size: 20px;"><span style = "font-size: 15px;">(June 24, 2022)</span><br> 
-                            June 14, SM Entertainment denied rumors regarding aespa’s upcoming release.<br><br>
+                    SM Entertainment Denies That Demo Of aespa’s Upcoming Song Was Leaked</p></h1><br>
+                    <img src = "News/news1.PNG" alt = "news1" style = "width: 80%; display: block; margin: auto;">
+                    <br>
+                    <p style = "font-size: 20px;"><span style = "font-size: 15px;">(June 24, 2022)</span><br> 
+                        June 14, SM Entertainment denied rumors regarding aespa’s upcoming release.<br><br>
 
-                            Recently, an audio clip spread on online communities with the claim that it is an English demo of aespa’s 
-                            new song “Girls.” The posts also added that producer Yoo Young Jin participated in making 
-                            the song. <span id = "dots">...</span> <span class = "more" id = "more"><br><br>
-                            
-                            In response to this, a representative of SM Entertainment commented, “The relevant demo is 
-                            not aespa’s new song.” <br><br>
-                            
-                            aespa made their debut in November 2020 with “Black Mamba,” and they followed up with the hit tracks 
-                            “Next Level” and “Savage.” Earlier this month, aespa confirmed their comeback with their second mini 
-                            album “Girls.” The album already surpassed 1 million stock pre-orders,
-                            setting a new personal best for the girl group.<br><br>
-                            
-                            Before aespa’s second mini album “Girls” drops on July 8, the group will be pre-releasing their 
-                            English-language single “Life’s Too Short” on June 24.</span> 
-                            <button class = "button" onclick ="readMore()" id = "readButton">See more</button>
-                        </p>
+                        Recently, an audio clip spread on online communities with the claim that it is an English demo of aespa’s 
+                        new song “Girls.” The posts also added that producer Yoo Young Jin participated in making 
+                        the song. <span id = "dots">...</span> <span class = "more" id = "more"><br><br>
+                        
+                        In response to this, a representative of SM Entertainment commented, “The relevant demo is 
+                        not aespa’s new song.” <br><br>
+                        
+                        aespa made their debut in November 2020 with “Black Mamba,” and they followed up with the hit tracks 
+                        “Next Level” and “Savage.” Earlier this month, aespa confirmed their comeback with their second mini 
+                        album “Girls.” The album already surpassed 1 million stock pre-orders,
+                        setting a new personal best for the girl group.<br><br>
+                        
+                        Before aespa’s second mini album “Girls” drops on July 8, the group will be pre-releasing their 
+                        English-language single “Life’s Too Short” on June 24.
+                        <br><br>Source: <a class = "sources" href = "https://www.soompi.com/article
+                        /1530847wpp/sm-entertainment-denies-that-demo-of-aespas
+                        -upcoming-song-was-leaked">[1]</a><a a class = "sources" href="https://entertain.naver.com/now/
+                        read?oid=311&aid=0001461267"> [2]</a></span> 
+                        <button class = "read-button" onclick ="readMore()" id = "readButton"><u>See more</u></button>
+                    </p><hr><br>
+                    <h1><p style = "font-size: 30px; margin: 0;">
+                        Watch: aespa Surprises Fans By Dropping Pre-Release Track “Illusion” + Is Chosen As Apple Music’s 
+                        “Up Next” Artist For June</p></h1><br>
+                        <img src = "News/news2.PNG" alt = "news2" style = "width: 80%; display: block; margin: auto;">
                         <br>
-                        <h1><p style = "font-size: 30px; margin: 0;">
-                            SM Entertainment Denies That Demo Of aespa’s Upcoming Song Was Leaked</p></h1><br>
-                            <img src = "News/news1.PNG" alt = "news1" style = "width: 80%; display: block; margin: auto;">
-                            <br>
-                            <p style = "font-size: 20px;"><span style = "font-size: 15px;">(June 24, 2022)</span><br> 
-                                June 14, SM Entertainment denied rumors regarding aespa’s upcoming release.<br><br>
-    
-                                Recently, an audio clip spread on online communities with the claim that it is an English demo of aespa’s 
-                                new song “Girls.” The posts also added that producer Yoo Young Jin participated in making 
-                                the song. <span id = "dots1">...</span> <span class = "more" id = "more1"><br><br>
+                        <p style = "font-size: 20px;"><span style = "font-size: 15px;">(June 1, 2022)</span><br> 
+                            aespa’s long-awaited comeback announcement wasn’t the only surprise in store for MY today! <br><br>
+
+                            On June 1, aespa announced that they would be making their highly-anticipated return this July with 
+                            their second mini album “Girls.” Later that morning, SM Entertainment also revealed that aespa had 
+                            signed a partnership with Warner Records and would be <span id = "dots1">...</span> 
+                            <span class = "more" id = "more1">pre-releasing their English-language single “Life’s Too Short”—which they 
+                                first performed at Coachella back in April—on June 24. <br><br>
+
+                                However, more excitement was still to come: that same afternoon, aespa unexpectedly released 
+                                a brand-new song entitled “Illusion” from their upcoming mini album. <br><br>
                                 
-                                In response to this, a representative of SM Entertainment commented, “The relevant demo is 
-                                not aespa’s new song.” <br><br>
+                                At the same time, Apple Music officially announced that aespa was their 
+                                “Up Next” artist for June, making aespa only the second Asian artist after NCT 127 
+                                ever to be selected for the title. <br> <br>
                                 
-                                aespa made their debut in November 2020 with “Black Mamba,” and they followed up with the hit tracks 
-                                “Next Level” and “Savage.” Earlier this month, aespa confirmed their comeback with their second mini 
-                                album “Girls.” The album already surpassed 1 million stock pre-orders,
-                                setting a new personal best for the girl group.<br><br>
-                                
-                                Before aespa’s second mini album “Girls” drops on July 8, the group will be pre-releasing their 
-                                English-language single “Life’s Too Short” on June 24.</span> 
-                                <button class = "button" onclick ="readMore1()" id = "readButton1">See more</button>
-                            </p>
+                                Check out aespa’s new lyric video for their surprise pre-release track “Illusion” below!
+                                <br><br> <a class = "sources-img" style = "color: white;" href = 
+                                "https://www.youtube.com/watch?v=BpCvYeK5hcE">aespa 에스파 '도깨비불 (Illusion)' Lyric Video
+                                    <img class = "sources-img" src = "News/Illusion.jpg" alt = "illusion" style = "width: 80%;"></a>
+                                <br><br>Source: <a class = "sources" href = "https://www.soompi.com/article/1528909wpp/watch-aespa
+                                -surprises-fans-by-dropping-pre-release-track-illusion-is-chosen-as-apple-musics-up-next-artist-for-
+                                june">[1]</a><a a class = "sources" href="http://www.mydaily.co.kr/new_yk/html/read.php?newsid=202206011314365547"> [2]</a>
+                            </span>
+                            <button class = "read-button" onclick ="readMore1()" id = "readButton1"><u>See more</u></button>
+                        </p><hr><br>
+                    <h1><p style = "font-size: 30px; margin: 0;">
+                    aespa's Giselle donates 10 million KRW to help abandoned animals</p></h1><br>
+                    <img src = "News/news3.PNG" alt = "news3" style = "width: 80%; display: block; margin: auto;">
+                    <br>
+                    <p style = "font-size: 20px;"><span style = "font-size: 15px;">(June 4, 2022)</span><br> 
+                    Giselle, a member of the girl group aespa recently made a generous donation to a non-profit 
+                    organization by the name 'Yuhengsa' (translated to people who seek happiness for abandoned animals) <br><br>
+                    On June 3, they took to their official Instagram account to speak about the<span id = "dots2">...</span> 
+                    <span class = "more" id = "more2">donation and thank Giselle for her kindness. They shared that 
+                        an unknown individual deposited 10 million won (about Rs. 6,20,000 in Indian money) to their 
+                        account a few days ago, later getting to know that it was from Giselle.<br><br>
+                        
+                        In the caption, Yuhengsa wrote, “A few days ago, 10,000,000 KRW was deposited into 
+                        Yuhengsa's account anonymously. It turns out the sponsor was Aespa’s Giselle.”<br><br>
+
+                        <a href = "News/giselle-donate.jpg"><img src = "News/giselle-donate.jpg" 
+                            alt = "donate" style = "width: 50%;"></a><br><br>
+
+                        “Giselle, who has always been very interested in the issue of abandoned animals, said that 
+                        she continued to watch Yuhengsa’s Instagram with interest, and she made such a generous move by 
+                        sending such a large amount of donation!”<br><br>
+
+                        They thanked her saying, “Thank you so much for accompanying us on the path to finding 
+                        happiness for abandoned animals. We’ll continue to watch and support you. Please also show 
+                        a lot of support to Yuhengsa that finds happiness for abandoned animals!”
+                        <br><br>Source: <a class = "sources" href = "https://www.zoomtventertainment.com/korean/
+                        aespas-giselle-makes-a-donation-of-10-million-won-to-aid-abandoned-animals-korean-
+                        entertainment-kpop-news-article-92002319">[1]</a><a a class = "sources" href="https://www.instagram.com
+                        /p/CeV1vC5JgHl/?utm_source=ig_embed&ig_rid=1f138cf7-447a-46df-b174-f24012469746"> [2]</a>
+                    </span>
+                    <button class = "read-button" onclick ="readMore2()" id = "readButton2"><u>See more</u></button>
+                    </p><hr><br>
+                    <h1><p style = "font-size: 30px; margin: 0;">Aespa to hold showcase in LA</p></h1><br>
+                    <img src = "News/news4.jpeg" alt = "news4" style = "width: 80%; display: block; margin: auto;">
+                    <br>
+                    <p style = "font-size: 20px;"><span style = "font-size: 15px;">(June 7, 2022)</span><br> 
+                    K-pop girl group Aespa is heading to Los Angeles to hold a showcase.
+
+                    The group will hold the “Aespa Showcase SYNK in LA” at the Los Angeles YouTube 
+                    Theater in Inglewood, California on June 26.<span id = "dots3">...</span> 
+                    <span class = "more" id = "more3"><br><br>
+                        
+                        During the showcase, Aespa will perform hit and new songs, and will 
+                        communicate with fans through talks and games.<br><br>
+                        
+                        After LA, Aespa will hold the “Aespa Japan Premium Showcase 2022-SYNK” on 
+                        Aug. 6 and 7 at the Pia Arena MM in Yokohama, Japan. <br> <br>
+
+                        Aespa will be dropping their second mini-album “Girls” on July 8. Ahead of 
+                        the album’s release, Aespa will release the English single “Life’s Too Short” on June 24. <br><br>
+
+                        Last month, Time magazine included Aespa, composed of Giselle, Karina, Ningning,
+                        and Winter, as one of its 2022 Next Generation Leaders, which showcased 
+                        “young people from across fields and around the globe who are working to build a better world.” <br><br>
+
+                        Besides Aespa, those in the list were Olga Rudenko, Ukraine; Maximilian Davis, United Kingdom; 
+                        Jonathan Bailey, United Kingdom; Deepica Mutyala, United States; CKay, Nigeria; Jaz Brisack, 
+                        United States; Bilal Baig, Canada; Rinzin Phunjok Lama, Nepal; and Bolor-Erdene Battsengel, Mongolia. <br><br>
+
+                        In April, Aespa made their debut US live performance at the 
+                        Coachella Valley Music and Arts Festival in Indio, California.<br><br>
+
+                        “This is actually our very first time performing in such…in front of such a 
+                        large audience and we are so happy to be here and we are ready to party,” Giselle told the audience.
+                        <br><br>Source: <a class = "sources" href = "https://mb.com.ph/2022/06/07/aespa-to-hold-showcase-in-la/">[1]</a>
+                    </span>
+                    <button class = "read-button" onclick ="readMore3()" id = "readButton3"><u>See more</u></button>
+                        </p><hr><br>
+                        <h1><p style = "font-size: 30px; margin: 0;">Fans and netizens are adoring aespa Winter's pigtails</p></h1><br>
+                        <img src = "News/news5.jpg" alt = "news3" style = "width: 80%; display: block; margin: auto;">
+                        <br>
+                        <p style = "font-size: 20px;"><span style = "font-size: 15px;">(May 29, 2022)</span><br> 
+                            aespa has now firmly placed itself as one of the most popular 4th generation girl groups after 
+                            making their entrance into the music industry on November 17, 2020. All the members have been 
+                            praised for their visuals and performance skills as they have stolen the hearts of fans from all 
+                            over the globe.<span id = "dots4">...</span> 
+                        <span class = "more" id = "more4"><br><br> 
+                        
+                        Winter has been receiving much love as a member of this popular girl group and has garnered a 
+                        hefty number of fans herself.<br><br>
+                        
+                        Recently, Winter has gained attention with her adorable hairstyle at one of the college festivals. Aespa
+                        performed at the Hanyang University college festival recently, and various footage of the 
+                        group was shared online.<br><br>
+
+                        All the members received immense love from fans. In particular, fans are adoring Winter's pigtails 
+                        and her cuteness during the performance. <br> <br>
+
+                        <th></th>
+                        <tr><a class = "sources-img" href = "News/5.1.png"><img src = "News/5.1.png" alt = "5" style = "width: 30%;"></a>
+                            <a class = "sources-img" href = "News/5.2.png"><img src = "News/5.2.png" alt = "5" style = "width: 30%;"></a>
+                            <a class = "sources-img" href = "News/5.3.png"><img src = "News/5.3.png" alt = "5" style = "width: 30%;"></a>
+                            <a class = "sources-img" href = "News/5.4.png"><img src = "News/5.4.png" alt = "5" style = "width: 30%;"></a>
+                            <a class = "sources-img" href = "News/5.5.png"><img src = "News/5.5.png" alt = "5" style = "width: 30%;"></a>
+                            <a class = "sources-img" href = "News/5.6.png"><img src = "News/5.6.png" alt = "5" style = "width: 30%;"></a></tr>
+                            <br><br>
+                        Netizens commented, "Winter is so adorable with that hair," "Winter should always have pigtails," 
+                        "I love Winter, she's so cute," "This hair on her is legendary," "Personally, I love this hairstyle 
+                        on her the best," "She looks like a fairy," "She's so pretty," "Her hair is perfect for the college 
+                        festival," "She's so cute," "She's so pretty that I'm so envious she looks good with that hair," "Her hair, 
+                        the way it's tied, and her outfit are all perfect," "She's so adorable," and "I like Winter with this hairstyle 
+                        the best."<br><br>
+                        <video height = "350px" controls style = "display: block; margin: auto; float: left;">
+                            <source src = "News/5.7.mp4" type="video/mp4"></video>
+                            <video height = "350px" controls style = "display: block; margin: auto;">
+                                <source src = "News/5.8.mp4" type="video/mp4"></video>
+                        <br><br>Source: <a class = "sources" href = "https://www.allkpop.com/article/2022/05/fans-and-netizens-
+                        are-adoring-aespa-winters-pigtails">[1]</a>
+                        </span>
+                        <button class = "read-button" onclick ="readMore4()" id = "readButton4"><u>See more</u></button>
+                        </p><hr><br>
+                        <h1><p style = "font-size: 30px; margin: 0;">SM Entertainment’s GOT the beat members, BoA and aespa’s 
+                            Karina slammed over colorist remarks</p></h1><br>
+                        <img src = "News/news6.jpeg" alt = "news6" style = "width: 80%; display: block; margin: auto;">
+                        <br>
+                        <p style = "font-size: 20px;"><span style = "font-size: 15px;">(February 12, 2022)</span><br> 
+                            In a video released online, BoA is seen making a colorist joke on Girls’ Generation’s Hyoyeon’s past
+                            tanned skin while aespa’s Karina’s laughed hysterically<span id = "dots5">...</span> 
+                        <span class = "more" id = "more5"><br><br>
+                            It seems like some K-pop idols just don’t understand the term ‘watch and learn’ as more artists from 
+                            SM Entertainment are called out for their insensitive remarks about dark skin color. First, 
+                            it was Aespa's (Stylized as aespa) Giselle who was slammed by fans for her lip-syncing 
+                            the N-word on purpose and now it is Karina, another member of aespa, who is being called out by 
+                            fans for her insensitive reaction to colorist remarks alongside mature idols like BoA and Hyoyeon. 
+                            The newest girl group project from the label titled, Girls On Top (also known as GOT, in short) comprising 
+                            of famous female idols from SM Entertainment is now facing heavy backlash online after member BoA’s 
+                            colorist remark and aespa’s Karina’s overly exaggerated reaction to it.<br><br>
+                            
+                            With SM Entertainment launching their first female supergroup composed of other idols from the label, 
+                            Girls On Top’s first subunit named GOT the beat consisting of members namely BoA, Taeyeon and 
+                            Hyoyeon of Girls’ Generation, Seulgi and Wendy of Red Velvet, and Karina and Winter of aespa 
+                            that dropped their first single, ‘Step Back’ early in January this year and are currently promoting 
+                            the same. Just as they do so, members BoA, Hyoyeon, and Karina have now found themselves in some 
+                            hot water with K-pop fans who are calling out their colorist remarks on Twitter.<br> <br>
+
+                            <video width = "50%" controls style = "display: block; margin: auto;">
+                                <source src = "News/6.1.mp4" type="video/mp4"></video>
+                            <br><br>Source: <a class = "sources" href = "https://meaww.com/sm-entertainments-got-the-beat-
+                            members-bo-a-and-aespas-karina-slammed-for-making-colorist-remarks">[1]</a><a class = "sources" 
+                            href = "https://twitter.com/globalmyeon/status/1492341773548638226?ref_src=twsrc%5Et
+                            fw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1492341773548638226%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url
+                            =https%3A%2F%2Fmeaww.com%2Fsm-entertainments-got-the-beat-members-bo-a-and-aespas-karina-
+                            slammed-for-making-colorist-remarks"> [2]</a>
+                        </span>
+                        <button class = "read-button" onclick ="readMore5()" id = "readButton5"><u>See more</u></button>
+                            </p><hr><br>
                 </div>
                 <div class = "column-1" style = "margin-right: 3cm">
                     <h1><p></p></h1>
