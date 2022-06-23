@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang = "en">
 <style>
-
+* 
+{
+  box-sizing: border-box;
+}
 html
 {
     background-color: black;
@@ -21,20 +24,25 @@ html
 }
 @media only screen and (min-width: 768px)
 {
-    .column-1 {width: 8.33%; float: left;}
+    .column-1 {width: 8.33%;}
     .column-2 {width: 16.66%;}
-    .column-3 {width: 25%;}
+    .column-3 {width: 25%; float: right;}
     .column-4 {width: 33.33%;}
     .column-5 {width: 41.66%;}
     .column-6 {width: 50%;}
     .column-7 {width: 58.33%;}
     .column-8 {width: 66.66%;}
-    .column-9 {width: 75%;}
+    .column-9 {width: 75%; float: left;}
     .column-10 {width: 83.33%;}
     .column-11 {width: 91.66%;}
     .column-12 {width: 100%;}
 }
-
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
 .button
 {
     font-size: 25px;
@@ -80,29 +88,29 @@ html
             </div>
             <div class = "column-9">
                 <div class = "column-9 Updates">
-                    <h1><p style = "color: white; font-size: 50px; margin: 0;">Updates</p></h1>
-                    <p id = "smcu-updates1" style = "color: white; font-size: 30px; margin: 0;"></p>
+                    <h1><p style = "font-size: 50px; margin: 0;">Updates</p></h1> <hr>
+                    <p id = "smcu-updates1" style = "font-size: 30px; margin: 0;"></p>
                     <a href = "https://www.youtube.com/watch?v=yH9v20RCz_w" style = "color:white;">
                         <p class = "smcu2-text" style = "margin: auto; font-size: 20px;">aespa 에스파 ‘ep2. Next Level’ – SM Culture Universe Behind The Scenes</p>
                         <img class = "smcu2" src = "Update4.jpg" alt="SMCU2" style="width: 100%"> 
                     </a><br><br><br><br>
-                    <p id = "smcu-updates2" style = "color: white; font-size: 30px; margin: 0;"></p>
+                    <p id = "smcu-updates2" style = "font-size: 30px; margin: 0;"></p>
                     <a href = "Update3.jpg"><img src = "Update3.jpg" alt = "ig1" style = "width: 100%"></a>
                     <br><br><br><br>
-                    <p id = "smcu-updates3" style = "color: white; font-size: 30px; margin: 0;"></p>
+                    <p id = "smcu-updates3" style = "font-size: 30px; margin: 0;"></p>
                     <a href = "https://www.youtube.com/watch?v=i8fRCkq5tbw&t=3s" style = "color:white;">
                         <p class = "smcu2-text" style = "margin: auto; font-size: 20px;">aespa 에스파 ‘ep2. Next Level’ – SM Culture Universes</p>
                         <img class = "smcu2" src = "SMCU-ep2.jpg" alt="SMCU2" style="width: 100%"> 
                     </a> <br><br><br><br>
                     <div id = ig-updates-img>
-                        <p id = "ig-updates" style = "color: white; font-size: 40px; margin: 0;"></p>
+                        <p id = "ig-updates" style = "font-size: 40px; margin: 0;"></p>
                         <br><br>
-                        <p id = "igu1" style = "color: white; font-size: 20px; margin: 0;"></p>
+                        <p id = "igu1" style = "font-size: 20px; margin: 0;"></p>
                         <th></th>
                         <tr><a href = "Ig5.jpg"><img src = "ig5.jpg" alt = "ig1" style = "width: 350px;"></a>
                             <a href = "ig6.jpg"><img src = "ig6.jpg" alt = "ig2" style = "width: 350px;"></a></tr>
                             <br><br><br><br>
-                        <p id = "igu2" style = "color: white; font-size: 20px; margin: 0;"></p>
+                        <p id = "igu2" style = "font-size: 20px; margin: 0;"></p>
                         <th></th>
                         <tr><a href = "ig1.jpg"><img src = "ig1.jpg" alt = "ig1" style = "width: 350px;"></a>
                             <a href = "ig2.jpg"><img src = "ig2.jpg" alt = "ig2" style = "width: 350px;"></a></tr>
@@ -110,6 +118,17 @@ html
                             <a href = "ig4.jpg"><img src = "ig4.jpg" alt = "ig4" style = "height: 350px;"></a></tr> 
                     </div>
                 </div>
+            </div>
+            <div class = "column-2" style = "float:left; padding: 0;">
+                <h1><p style = "font-size: 50px; margin: 0;">Up Next:</p></h1>
+                <hr>
+                <img src = "aespa-girls.jpg" alt = "girls" style = "width: 80%; display: block; margin: auto;">
+                <p style = "font-size: 20px; text-align: center; margin: 0;">LA Showcase <br>
+                    <span style = "font-size: 15px; text-align: center;">26 (Sun) - June 27 (Mon)</span></p>
+                <div style = "padding: 0; margin: 0;">
+                    <p style = "font-size: 15px; text-align: center;">Click here for aespa's full schedule this month:<br> <span style = "font-size: 50px;;">➫<a href = "Schedule.html"><button class = "button"><u>Schedule</u></button></a></span></p>
+                </div>
+
             </div>
         </div>
         <script type = "text/javascript" src = "Home-js.js"></script>
