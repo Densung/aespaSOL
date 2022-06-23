@@ -7,11 +7,32 @@ function readMore()
     if (dot.style.display === "none") 
     {
       dot.style.display = "inline";
-      buttonText.innerHTML = "Read more"; 
+      buttonText.innerHTML = "See more"; 
       moreText.style.display = "none";
-    } else {
+    } 
+    else 
+    {
       dot.style.display = "none";
-      buttonText.innerHTML = "Read less"; 
+      buttonText.innerHTML = "See less"; 
+      moreText.style.display = "inline";
+    }
+}
+function readMore1() 
+{
+    var dot = document.getElementById("dots1");
+    var moreText = document.getElementById("more1");
+    var buttonText = document.getElementById("readButton1");
+  
+    if (dot.style.display === "none") 
+    {
+      dot.style.display = "inline";
+      buttonText.innerHTML = "See more"; 
+      moreText.style.display = "none";
+    } 
+    else 
+    {
+      dot.style.display = "none";
+      buttonText.innerHTML = "See less"; 
       moreText.style.display = "inline";
     }
 }
