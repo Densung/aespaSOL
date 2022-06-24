@@ -24,7 +24,7 @@ html
 }
 @media only screen and (min-width: 768px)
 {
-    .column-1 {width: 8.33%; float: left;}
+    .column-1 {width: 8.33%;}
     .column-2 {width: 16.66%;}
     .column-3 {width: 25%;}
     .column-4 {width: 33.33%;}
@@ -32,7 +32,7 @@ html
     .column-6 {width: 50%;}
     .column-7 {width: 58.33%;}
     .column-8 {width: 66.66%;}
-    .column-9 {width: 75%; float: left;}
+    .column-9 {width: 75%; float: left; padding: 10px;}
     .column-10 {width: 83.33%;}
     .column-11 {width: 91.66%;}
     .column-12 {width: 100%;}
@@ -65,26 +65,31 @@ html
 {
     color: rgb(255, 255, 255);
     background-color: rgba(58, 48, 48, 0.452);
-    backdrop-filter: blur( 0px );
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    border: 1 solid rgba(48, 6, 75, 0.18);
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     max-width: 100%;
     line-height: 2;
-    border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     padding: 1px;
 }
 .profile img, .ae-profile img
 {
-    border: 5px solid rgb(164, 45, 255);
+    border: 8px solid rgb(127, 20, 208);
     width: 300px; 
     display: block; 
     margin: 10px;
 }
 .ae-profile img
 {
-    border: 5px solid aqua;
+    border: 8px solid rgb(20, 224, 224);
+}
+.link{
+    color: rgb(212, 101, 232);
+    text-decoration: none;
+}
+p{
+    line-height: 2;
 }
 </style>
     <head>
@@ -111,10 +116,11 @@ html
                 </div>
                 <div class = "column-9">
                     <div class = "column-9 karina-info">
-                        <h1>KARINA (카리나)</h1>
+                        <strong><p style="font-size: xxx-large;">KARINA (카리나)</p></strong>
                         <p style="font-size: larger;">
                             Yu Ji-min (Hangul: 유지민), also known by her stage name Karina (Hangul: 카리나), is a member of the South Korean girl group aespa and the female unit GOT the beat.
                         </p>
+                        <br>
                         <br>
                         <strong>
                             <hr style = "border: solid rgb(133, 31, 133);">
@@ -195,11 +201,11 @@ html
                         <strong>
                             <hr style = "border: solid rgb(133, 31, 133);">
                         </strong>
-                        <h1 style="font-size: xx-large; color: aquamarine;">Æ COUNTERPART</h1>
+                        <strong><p style="font-size: xx-large; color: aquamarine;">Æ COUNTERPART</p></strong>
                         <strong>
                             <hr style = "border: solid rgb(133, 31, 133);">
                         </strong>
-                        <h1 style="font-size: xx-large; color: aquamarine;">Æ KARINA</h1>
+                        <h1 style="color: aquamarine;">Æ KARINA</h1>
                         <p style="font-size: larger;">
                             æ-Karina (stylized as æ-karina or æ-KARINA) is a virtual member of aespa. She is the virtual counterpart to Karina. 
                             æ-Karina was first revealed during a press conference on October 28, 2020. Her and Karina together are referred to 
@@ -241,6 +247,7 @@ html
             <div class = "column-3 karina" style = "float:left; padding: 0cm;">
                 <br>
                 <div class = "profile">
+                    <br>
                         <img src = "Karina/Karina-dp.png"  alt = "Avatar">
                         <p style = "font-size: 18px; text-align: center; margin: 0;"> 
                             <span style = "background-color: black; padding: 5px; font-weight: bold;">Personal Information</span><br>
@@ -256,23 +263,27 @@ html
                             <u>Position:</u> Leader, Main Dancer, Vocalist, Lead Rapper, Face of the Group <br>
                             <u>Avatar:</u> æ-KARINA <br> <u>Signature:</u> <img src = "Karina/Karina_Signature.png"style = "border: none; border-radius: 0px;"><br>
                             <u>Symbol:</u> Heart ❤ <br> <u>Ability:</u> Rocket Puncher <br> <u>Active:</u> 2020–present<br> 
-                            <u>Agency:</u> S.M. Entertainment <BR> <u>Associated acts:</u> AESPA
+                            <u>Agency:</u> S.M. Entertainment <BR> 
+                            <u>Associated acts:</u> <a class="link" href="About.html" title="Aespa">AESPA</a>
                         </p>
+                        <br>
                     </div> 
                     
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <div class = "ae-profile">
+                        <br>
                         <img src="Karina/ae-Karina-dp.png" alt=" Ae COUNTERPART">
                         <p style = "font-size: 18px; text-align: center; margin: 0;"> 
                             <span style = "background-color: black; padding: 5px; font-weight: bold;">General Information</span><br>
                             <u>Nicknames:</u> My Karina (By Karina) <br>
                             <u>Active:</u> 2020-Present<br>
                             <u>Agency:</u> S.M. Entertainment<br> 
-                            <u>Associated Acts:</u> aespa, Karina<br> 
+                            <u>Associated Acts:</u> <a class="link" href="About.html" title="Aespa">AESPA</a>, 
+                            <a class = "link" href="Karina.html" title="Karina">Karina</a><br> 
                         </p><br>
                         <p style = "font-size: 18px; text-align: center; margin: 0; justify-content: center;"> 
                             <span style = "background-color: black; padding: 5px; font-weight: bold;">Physical Description</span><br>
@@ -281,6 +292,7 @@ html
                             <u>Eye Color:</u> Dark Blue <br>
                             <u>Hair Color:</u> Dark Purple <br>
                         </p>
+                        <br>
                     </div>
                 </div>
             </div>

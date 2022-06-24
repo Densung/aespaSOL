@@ -20,7 +20,7 @@ html
 }
 @media only screen and (min-width: 768px)
 {
-    .column-1 {width: 8.33%; float: left;}
+    .column-1 {width: 8.33%;}
     .column-2 {width: 16.66%;}
     .column-3 {width: 25%;}
     .column-4 {width: 33.33%;}
@@ -28,7 +28,7 @@ html
     .column-6 {width: 50%;}
     .column-7 {width: 58.33%;}
     .column-8 {width: 66.66%;}
-    .column-9 {width: 75%;}
+    .column-9 {width: 75%; float: left;}
     .column-10 {width: 83.33%;}
     .column-11 {width: 91.66%;}
     .column-12 {width: 100%;}
@@ -59,10 +59,14 @@ html
 }
 .link{
     color: rgb(212, 101, 232);
+    text-decoration: none;
 }
 .link-text:hover
 {
   opacity: 0.7;
+}
+p{
+    line-height: 2;
 }
 th{
     justify-content: center;
@@ -76,6 +80,31 @@ tr, td{
     padding: 10px;
     align-items: center;
     justify-content: center;
+}
+.profile, .navis-profile
+{
+    color: rgb(255, 255, 255);
+    background-color: rgba(58, 48, 48, 0.452);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    line-height: 2;
+    backdrop-filter: blur(5px);
+    padding: 1px;
+}
+.profile img, .navis-profile img
+{
+    border: 8px solid rgb(238, 188, 108);
+    width: 300px; 
+    display: block; 
+    margin: 10px;
+    border-radius: 10px;
+    border-radius: 50%;
+}
+.navis-profile img
+{
+    border: 8px solid rgb(27, 172, 240);
 }
 </style>
     <head>
@@ -103,8 +132,8 @@ tr, td{
                 <div class = "column-9">
                     <div class = "column-9 about">
                         <strong><p style="font-size: xxx-large;">aespa (에스파)</p></strong>
-                        <strong><a style="padding: 3px; font-size: 20px; justify-content: center; display: flex; color: rgb(68, 233, 255);">
-                            "Be my æ! Hello, we are aespa!"</a></strong>
+                        <strong><a style="padding: 3px; font-size: 20px; justify-content: center; display: flex; 
+                        color: rgb(150, 243, 255); text-shadow: 0 5px 10px rgba(234, 234, 234, 0.5);">Be my æ! Hello, we are aespa!"</a></strong>
                         <p style="font-size: larger;">
                             Aespa (Hangul: 에스파; stylized as æspa or aespa), is a South Korean girl group formed by SM Entertainment. They debuted on November 17, 2020,[1] with the digital single Black Mamba.
                         <br><br>
@@ -113,16 +142,16 @@ tr, td{
                         <br>
                         <br>
 
-                        <h1>History</h1>
                         <strong>
                             <hr style = "border: solid rgb(133, 31, 133);">
                         </strong>
+                        <h1>HISTORY</h1>
                         <strong><p style="font-size: x-large;">2020: aespa debut, fandom name reveal</p></strong>
                         <p> On October 26, 2020, a video was posted on aespa's twitter which revealed the name of the group and their logo. SM Entertainment then went on to announce that they will be debuting their new girl group sometime in November. On October 27, SM revealed Winter as the first member of aespa. On October 28, Karina was revealed as the second member of aespa.
                         <br><br>
                             On October 28th, during a press conference for Aespa, SM founder Lee-Soo Man announced the group would have fouridol members and four virtual members. This would create "a future world [that] centers on celebrities and avatars and transcends boundaries between real and virtual worlds".[3] During this press conference, a teaser video was revealed showing the two revealed members Winter and Karina as well as two unrevealed members, Ningning and Giselle. The teaser also showed one of the virtual members, æ-KARINA as well as the AI system, NAVIS. On October 29, Ningning was officially revealed as the third member of aespa. On October 30, Giselle was officially revealed as the fourth member of aespa. On November 2nd, it was announced that aespa would be making their debut with the digital single "Black Mamba" on November 17th.[4] Concept photos were released from November 4th to November 15th. The teaser for the music video was posted on SMTOWN's YouTube channel on November 16. On November 17th, aespa's fandom was revealed to be "MY." "MY" means 'The most precious friend' in KWANGYA where aespa's Avatars live.[5]
                         </p>
-                        <br><br>
+                        <br>
                         <strong><p style="font-size: x-large;">2021: "Forever", "Next Level", Savage, "Dreams Come True"</p></strong>
                         <p> On October 26, 2020, a video was posted on aespa's twitter which revealed the name of the group and their logo. SM Entertainment then went on to announce that they will be debuting their new girl group sometime in November. On October 27, SM revealed Winter as the first member of aespa. On October 28, Karina was revealed as the second member of aespa.
                         <br><br>
@@ -159,11 +188,12 @@ tr, td{
                         </p>
                         <br>
                         <br>
-                        <a style = "font-size: xx-large; color: white;" 
-                            href = "Members.html" title="Members">Members</a>
                         <strong>
                             <hr style = "border: solid rgb(133, 31, 133);">
                         </strong>
+                        <br>
+                        <a style = "font-size: xx-large; font-weight: bolder; color: rgb(255, 210, 254);" 
+                            href = "Members.html" title="Members">MEMBERS</a>
                         <p>All of the members do not have fixed official positions, except the leader and main vocalist positions.</p>
                         <div class="column-12 table">
                             <table>
@@ -215,9 +245,7 @@ tr, td{
                             <hr style = "border: solid rgb(133, 31, 133);">
                         </strong>
                         <strong><p style="font-size: xxx-large; color: aquamarine;">NÆVIS / NAVIS</p></strong>
-                        <strong>
-                            <hr style = "border: solid rgb(133, 31, 133);">
-                        </strong>
+                        
                         <p>
                             NAVIS[1], also stylized as nævis[2], (Hangul: 나이비스, naibiseu) is an AI system that helps the avatars of aespa appear in the real world, allowing them to be seen by the real aespa members. She was first revealed in the MY, KARINA teaser video. She was also featured in the group's Black Mamba promotional images.[3] 
                         <br><br>
@@ -272,12 +300,6 @@ tr, td{
                         </ul>
                         <br>
                         <br>
-                        <strong>
-                            <hr style = "border: solid rgb(133, 31, 133);">
-                        </strong>
-                        <strong><p style="font-size: xx-large; color: rgb(255, 255, 255);">THEORIES</p></strong>
-                        <p>Kasama pa ba to? unofficial daw kase e not verified from SM</p>
-                        <br>
                         <br>
                         <br>
                         <strong>
@@ -292,14 +314,14 @@ tr, td{
                         <a class = "link-text" style = "margin: auto; font-size: 30px; color: white; display: block; text-align: center;"
                         href = "https://www.youtube.com/watch?v=C0CXJR_ZbDE">
                             Aespa 에스파 - INTRO
-                        <img src = "About/aespa-about-intro.png" alt="synk" style="width: 100%"> 
+                        <img src = "About/aespa-about-intro.png" alt="synk" style="width: 100%; border: 5px solid rgb(207, 213, 241);"> 
                         <br>
                         <br>
                         <p id = "Synk" style = "font-size: 30px; margin: 0;"></p>
                         <a class = "link-text" style = "margin: auto; font-size: 30px; color: white; display: block; text-align: center;"
                         href = "https://www.youtube.com/watch?v=4PQnizkqhnk">
                             Aespa 에스파 - SYNK, aespa
-                        <img src = "About/synk-aespa.png" alt="synk" style="width: 100%">
+                        <img src = "About/synk-aespa.png" alt="synk" style="width: 100%; border: 5px solid aqua;"></a>
                         <br>
                         <br>
                         <br> 
@@ -323,6 +345,57 @@ tr, td{
                         <ul style="line-height: 2;">
                             <li><a class = "link" href="https://aespa-official.jp/" title="Website">Official Website</a></li>
                             <li><a class = "link" href="https://twitter.com/aespaJPofficial/" title="Twitter">Official Twitter</a></li>
+                    </div>
+                </div>
+                <div class = "column-3 aespa" style = "float:left; padding: 0cm;">
+                    <br>
+                    <div class = "profile">
+                            <img src = "About/aespa-about-dp.png"  alt = "Aespa">
+                            <p style = "font-size: 18px; text-align: center; margin: 0;">
+                                <br>
+                                <span style = "background-color: black; padding: 5px; font-weight: bold;">Background Information</span><br>
+                                <u>Also known as:</u> 에스파, æspa <br>
+                                <u>Origin:</u> Seoul, South Korea <br> 
+                                <u>Genre:</u> Dance pop <br> 
+                                <u>Debut:</u>  November 17, 2020 <br> 
+                                <u>Active:</u> 2020 - present <br> 
+                                <u>Agency:</u>  SM Entertainment (South Korea, 2020-present), Warner Records (United States, 2022-present) <br> 
+                                <u>Fandom:</u> MY (마이) <br>
+                                <u>Members:</u> <a class = "link" href="Karina.html" title="Karina">Karina</a>,<br>
+                                <a class = "link" href="Giselle.html" title="Giselle">Giselle</a>,<br>
+                                <a class = "link" href="Winter.html" title="Winter">Winter</a>,<br>
+                                <a class = "link" href="Ningning.html" title="Ningning">Ningning</a>
+                                <br>
+                            </p> <br><br>
+                        </div> 
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
+                        <div class = "navis-profile">
+                            <img src="About/Naevis.png" alt="AI">
+                            <p style = "font-size: 18px; text-align: center; margin: 0;">
+                                <br> 
+                                <span style = "background-color: black; padding: 5px; font-weight: bold;">General Information</span><br>
+                                <u>Associated with:</u> AESPA, æ-KARINA <br>
+                                <u>Appears in:</u> 2020-Present<br>
+                                <u>Agency:</u> S.M. Entertainment<br> 
+                                <u>Associated Acts:</u> <a class = "link" href="https://www.youtube.com/watch?v=VuguHFfbJ1w" title="MY, KARINA">MY, KARINA</a>,<br>
+                                    <a class = "link" href="https://www.youtube.com/watch?v=4TWR90KJl84" title="Next Level MV">Next Level MV</a>,<br>
+                                    <a class = "link" href="https://www.youtube.com/watch?v=WPdWvnAAurg" title="Savage MV">Savage MV</a>
+                                    <br> 
+                            </p><br>
+                            <p style = "font-size: 18px; text-align: center; margin: 0; justify-content: center;"> 
+                                <span style = "background-color: black; padding: 5px; font-weight: bold;">Physical Description</span><br>
+                                <u>Species:</u> AI System<br>
+                                <u>Gender:</u> Female <br> 
+                                <u>Eye Color:</u> Black <br>
+                                <u>Hair Color:</u> Light Blue <br>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
