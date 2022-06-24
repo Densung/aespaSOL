@@ -28,7 +28,7 @@ html
     .column-6 {width: 50%;}
     .column-7 {width: 58.33%;}
     .column-8 {width: 66.66%;}
-    .column-9 {width: 75%;}
+    .column-9 {width: 75%; float: left;}
     .column-10 {width: 83.33%;}
     .column-11 {width: 91.66%;}
     .column-12 {width: 100%;}
@@ -67,18 +67,20 @@ html
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     max-width: 100%;
     line-height: 2;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     padding: 1px;
 }
 .profile img, .ae-profile img
 {
+    border: 5px solid rgb(164, 45, 255);
     width: 300px; 
     display: block; 
     margin: 10px;
+}
+.ae-profile img
+{
+    border: 5px solid aqua;
 }
 </style>
     <head>
@@ -222,20 +224,20 @@ html
                         <a class = "link-text" style = "margin: auto; font-size: 30px; color: white; display: block; text-align: center;"
                         href = "https://www.youtube.com/watch?v=VuguHFfbJ1w">
                             Aespa 에스파 'MY, KARINA'
-                        <img src = "Karina/aespa-my-karina.png" alt="synk" style="width: 100%; border: 5px solid aqua;"> 
+                        <img src = "Karina/aespa-my-karina.png" alt="synk" style="width: 100%; border: 5px solid aqua;"></a>
                         
                         <br><br>
 
                         <a class = "link-text" style = "margin: auto; font-size: 30px; color: white; display: block; text-align: center;"
                         href = "https://www.youtube.com/watch?v=Hcu-Nr3wdGw">
                             Aespa 에스파 - 'SYNK, KARINA'
-                        <img src = "Karina/aespa-synk-karina.png" alt="synk" style="width: 100%; border: 5px solid aqua;"> 
+                        <img src = "Karina/aespa-synk-karina.png" alt="synk" style="width: 100%; border: 5px solid aqua;"></a>
                     </div>
                 </div>
             <div class = "column-3 karina" style = "float:left; padding: 0cm;">
                 <br>
                 <div class = "profile">
-                        <img src = "Karina/Karina-dp.png"  alt = "Avatar" style="border: 5px solid rgb(164, 45, 255);">
+                        <img src = "Karina/Karina-dp.png"  alt = "Avatar">
                         <p style = "font-size: 18px; text-align: center; margin: 0;"> 
                             <span style = "background-color: black; padding: 5px; font-weight: bold;">Personal Information</span><br>
                             <u>Birthname:</u> Yu Ji-min (유지민) <br>
@@ -257,7 +259,7 @@ html
                     <br><br>
 
                     <div class = "ae-profile">
-                        <img src="Karina/ae-Karina-dp.png" alt=" Ae COUNTERPART" style="border: 5px solid aqua;">
+                        <img src="Karina/ae-Karina-dp.png" alt=" Ae COUNTERPART">
                         <p style = "font-size: 18px; text-align: center; margin: 0;"> 
                             <span style = "background-color: black; padding: 5px; font-weight: bold;">General Information</span><br>
                             <u>Nicknames:</u> My Karina (By Karina) <br>
